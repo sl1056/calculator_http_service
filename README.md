@@ -62,8 +62,8 @@ curl --location 'http://localhost:8080/api/v1/calculate' \
 # Клонируйте репозиторий:
 
 ```json
-git clone https://github.com/sl1056/yandex_calculator_http_service.git
-cd yandex_calculator_http_service
+git clone https://github.com/sl1056/calculator_http_service.git
+cd calculator_http_service
 ```
 
 
