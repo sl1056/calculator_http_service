@@ -50,8 +50,9 @@ curl --location 'http://localhost:8080/api/v1/calculate' \
 --data '{
   "expression": "2+2*2"
 }'
+```
 Успешный ответ:
-json
+```json
 {
     "result": "6.000000"
 }
