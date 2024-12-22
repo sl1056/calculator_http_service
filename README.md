@@ -20,27 +20,28 @@
 {
     "expression": "арифметическое выражение"
 }
+```
 
-Ответ
-Успешный результат (HTTP 200)
-json
-Copy code
+### Ответ
+## Успешный результат (HTTP 200)
+``` json
 {
     "result": "вычисленный результат"
 }
-Некорректное выражение (HTTP 422)
-json
-Copy code
+```
+## Некорректное выражение (HTTP 422)
+``` json
 {
     "error": "Expression is not valid"
 }
-Внутренняя ошибка сервера (HTTP 500)
-json
-Copy code
+```
+## Внутренняя ошибка сервера (HTTP 500)
+``` json
 {
     "error": "Internal server error"
 }
 ```
+
 ### Веб-сервис калькулятора
 Запрос:
 ```json
@@ -81,3 +82,4 @@ go run calc_service.go
 "3.5/(2-0.5)"
 
 ```
+
