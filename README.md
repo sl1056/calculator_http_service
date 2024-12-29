@@ -99,8 +99,8 @@ curl --location 'http://localhost:8080/api/v1/calculate' --header 'Content-Type:
 {"error":"Expression is not valid"}
 ```
 
-## Установка и запуск
-# Клонируйте репозиторий:
+# Установка и запуск
+## Клонируйте репозиторий:
 
 ```json
 git clone https://github.com/sl1056/calculator_http_service.git
@@ -108,16 +108,16 @@ cd calculator_http_service
 ```
 
 
-# Запустите сервис:
+## Запустите сервис:
 
 ```json
 go run calc_service.go
 ```
 
-# Сервис будет доступен по адресу http://localhost:8080.
+## Сервис будет доступен по адресу http://localhost:8080.
 
-## Тестирование сервиса
-# Вы можете протестировать сервис с помощью curl. Примеры корректных выражений:
+# Тестирование сервиса
+## Вы можете протестировать сервис с помощью curl. Примеры корректных выражений:
 ``` json
 "2+2*2"
 
