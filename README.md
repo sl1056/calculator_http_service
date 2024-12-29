@@ -58,6 +58,21 @@ curl --location 'http://localhost:8080/api/v1/calculate' \
 }
 ```
 
+Запрос:
+```json
+curl --location 'http://localhost:8080/api/v1/calculate' \
+--header 'Content-Type: application/json' \
+--data '{
+  "expression": "2-"
+}'
+```
+Успешный ответ:
+```json
+{
+    "error":"Expression is not valid"
+}
+```
+
 ## Установка и запуск
 # Клонируйте репозиторий:
 
