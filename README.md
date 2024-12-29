@@ -66,7 +66,21 @@ curl --location 'http://localhost:8080/api/v1/calculate' \
   "expression": "2-"
 }'
 ```
-Успешный ответ:
+Ответ:
+```json
+{
+    "error":"Expression is not valid"
+}
+```
+
+```json
+curl --location 'http://localhost:8080/api/v1/calculate' \
+--header 'Content-Type: application/json' \
+--data '{
+  "expression": "2a"
+}'
+```
+Ответ:
 ```json
 {
     "error":"Expression is not valid"
