@@ -86,6 +86,18 @@ curl --location 'http://localhost:8080/api/v1/calculate' \
     "error":"Expression is not valid"
 }
 ```
+## Ограничения
+# Калькулятор вообще не работает с отрицательными числами. Например:
+Запрос
+```json
+curl --location 'http://localhost:8080/api/v1/calculate' --header 'Content-Type: application/json' --data '{
+  "expression": "2-(-2)"
+}'
+```
+Ответ:
+```json
+{"error":"Expression is not valid"}
+```
 
 ## Установка и запуск
 # Клонируйте репозиторий:
